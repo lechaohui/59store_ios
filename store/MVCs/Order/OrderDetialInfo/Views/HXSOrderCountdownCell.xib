@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSOrderCountdownCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="71"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zbr-Lu-0iR">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="还剩   14   分   15   秒     订单将自动关闭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dy8-ID-iRu">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Dy8-ID-iRu" firstAttribute="top" secondItem="Zbr-Lu-0iR" secondAttribute="top" id="2Yp-k4-Qg6"/>
+                            <constraint firstItem="Dy8-ID-iRu" firstAttribute="leading" secondItem="Zbr-Lu-0iR" secondAttribute="leading" id="dEN-lx-tjX"/>
+                            <constraint firstAttribute="trailing" secondItem="Dy8-ID-iRu" secondAttribute="trailing" id="v6N-zW-oTo"/>
+                            <constraint firstAttribute="bottom" secondItem="Dy8-ID-iRu" secondAttribute="bottom" id="zFO-U7-MHg"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Zbr-Lu-0iR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="6qn-B8-7OH"/>
+                    <constraint firstAttribute="bottom" secondItem="Zbr-Lu-0iR" secondAttribute="bottom" id="pY8-y5-zDB"/>
+                    <constraint firstAttribute="trailing" secondItem="Zbr-Lu-0iR" secondAttribute="trailing" id="q7i-Tx-q9I"/>
+                    <constraint firstItem="Zbr-Lu-0iR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="vQk-VM-bhO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="showLabel" destination="Dy8-ID-iRu" id="Qef-HT-3iR"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="446"/>
+        </tableViewCell>
+    </objects>
+</document>

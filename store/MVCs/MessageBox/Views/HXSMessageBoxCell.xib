@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSMessageBoxCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="65"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zNd-zF-K0r" customClass="HXSImageViewWithPoint">
+                        <color key="backgroundColor" red="1" green="0.70128984899328861" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="36" id="Fzv-85-tbo"/>
+                            <constraint firstAttribute="width" constant="36" id="Nsf-fd-zra"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59公告" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xaq-An-SjT">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="bZI-vQ-Zgr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.41960784313725491" green="0.41960784313725491" blue="0.41960784313725491" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-08-25 11:11" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FNI-Le-M8w">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="a1g-wd-QGf"/>
+                            <constraint firstAttribute="width" constant="126" id="bUE-ex-ifb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="59购物59购物59购物59购物59购物59购物59购物59购物59购物59购物59购物59购物" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="usz-R6-yaC">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Ftk-Vz-7oR"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zNd-zF-K0r" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ede-n5-VO3"/>
+                    <constraint firstItem="FNI-Le-M8w" firstAttribute="top" secondItem="Xaq-An-SjT" secondAttribute="top" id="HRH-A7-Qsi"/>
+                    <constraint firstItem="Xaq-An-SjT" firstAttribute="top" secondItem="zNd-zF-K0r" secondAttribute="top" id="HcJ-Gp-4rW"/>
+                    <constraint firstItem="usz-R6-yaC" firstAttribute="top" secondItem="FNI-Le-M8w" secondAttribute="bottom" id="Jhr-OS-QIH"/>
+                    <constraint firstItem="Xaq-An-SjT" firstAttribute="leading" secondItem="zNd-zF-K0r" secondAttribute="trailing" constant="15" id="PWA-cf-Rxc"/>
+                    <constraint firstItem="FNI-Le-M8w" firstAttribute="trailing" secondItem="usz-R6-yaC" secondAttribute="trailing" id="QoK-ZG-DNo"/>
+                    <constraint firstItem="FNI-Le-M8w" firstAttribute="leading" secondItem="Xaq-An-SjT" secondAttribute="trailing" constant="5" id="uGS-VP-YN3"/>
+                    <constraint firstItem="usz-R6-yaC" firstAttribute="leading" secondItem="Xaq-An-SjT" secondAttribute="leading" id="vA6-fw-Zun"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="FNI-Le-M8w" secondAttribute="trailing" constant="15" id="gvg-pP-ViU"/>
+                <constraint firstItem="zNd-zF-K0r" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="jdC-hM-Zth"/>
+            </constraints>
+            <connections>
+                <outlet property="detialLabel" destination="usz-R6-yaC" id="hCR-Y2-ckx"/>
+                <outlet property="imageViewWithPoint" destination="zNd-zF-K0r" id="1a7-HX-rCc"/>
+                <outlet property="timeLabel" destination="FNI-Le-M8w" id="NsM-t7-Ou7"/>
+                <outlet property="titleLabel" destination="Xaq-An-SjT" id="Jtf-lc-LTT"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

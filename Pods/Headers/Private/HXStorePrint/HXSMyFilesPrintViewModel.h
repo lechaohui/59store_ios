@@ -1,0 +1,1 @@
+../../../HXStorePrint/HXStorePrint/Classes/Print/FilesPrint/ViewModel/HXSMyFilesPrintViewModel.h

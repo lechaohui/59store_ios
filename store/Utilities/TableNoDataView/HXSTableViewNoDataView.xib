@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HXSTableViewNoDataView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="202"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_empty_cash_record" translatesAutoresizingMaskIntoConstraints="NO" id="uTr-3J-HSt">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="HYl-ev-mwU"/>
+                        <constraint firstAttribute="height" constant="80" id="tyK-KY-MQz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂无数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cF-BW-1ZY">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8e6-w3-rXX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9cF-BW-1ZY" secondAttribute="bottom" constant="10" id="85A-P9-JDb"/>
+                <constraint firstItem="uTr-3J-HSt" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="HHE-IL-hs1"/>
+                <constraint firstItem="9cF-BW-1ZY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hl6-WN-wYp"/>
+                <constraint firstItem="9cF-BW-1ZY" firstAttribute="top" secondItem="uTr-3J-HSt" secondAttribute="bottom" constant="14" id="V3L-gK-Atj"/>
+                <constraint firstAttribute="trailing" secondItem="9cF-BW-1ZY" secondAttribute="trailing" id="WAb-Am-LKN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="uTr-3J-HSt" id="HKH-2D-mY3"/>
+                <outlet property="titleLabel" destination="9cF-BW-1ZY" id="Uys-N2-8Jz"/>
+            </connections>
+            <point key="canvasLocation" x="-432" y="57"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_empty_cash_record" width="80" height="80"/>
+    </resources>
+</document>

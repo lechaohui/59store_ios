@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="g94-au-kIR" userLabel="OpenShopHeaderCenterView" customClass="HXSOpenShopHeaderCenterView">
+            <rect key="frame" x="0.0" y="0.0" width="509" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2n6-UE-v5e" userLabel="Person Info Btn">
+                    <rect key="frame" x="0.0" y="0.0" width="509" height="164"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="164" id="Qa5-9b-G2a"/>
+                    </constraints>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mb6-np-db7" userLabel="header Image View">
+                    <rect key="frame" x="28" y="64" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="f32-Rh-E2Y"/>
+                        <constraint firstAttribute="width" constant="60" id="nF6-jm-3he"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="张三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D8h-RR-9rp" userLabel="login Label">
+                    <rect key="frame" x="118" y="72" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="申请成为店长" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JNc-fl-ILv">
+                    <rect key="frame" x="118" y="104" width="74" height="15"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="esl-7f-hJV" userLabel="setbut">
+                    <rect key="frame" x="23" y="28" width="62" height="22"/>
+                    <state key="normal" title="设  置" image="shezhi_icon"/>
+                    <connections>
+                        <action selector="setbutAction:" destination="g94-au-kIR" eventType="touchUpInside" id="fPx-ER-s81"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKe-ag-DWd" userLabel="messagebut">
+                    <rect key="frame" x="466" y="28" width="25" height="25"/>
+                    <state key="normal" image="message"/>
+                    <connections>
+                        <action selector="msgAction:" destination="g94-au-kIR" eventType="touchUpInside" id="4pq-aD-uoB"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottomMargin" secondItem="JNc-fl-ILv" secondAttribute="bottom" constant="45" id="1KY-MK-sHG"/>
+                <constraint firstItem="fKe-ag-DWd" firstAttribute="top" secondItem="g94-au-kIR" secondAttribute="topMargin" constant="20" id="BZZ-1m-KTf"/>
+                <constraint firstAttribute="bottom" secondItem="2n6-UE-v5e" secondAttribute="bottom" id="EFf-JV-CIp"/>
+                <constraint firstItem="JNc-fl-ILv" firstAttribute="leading" secondItem="Mb6-np-db7" secondAttribute="trailing" constant="30" id="I29-Td-ZjZ"/>
+                <constraint firstAttribute="trailing" secondItem="2n6-UE-v5e" secondAttribute="trailing" id="O7f-jV-khy"/>
+                <constraint firstAttribute="trailingMargin" secondItem="fKe-ag-DWd" secondAttribute="trailing" constant="10" id="TEi-7d-g7U"/>
+                <constraint firstItem="esl-7f-hJV" firstAttribute="leading" secondItem="g94-au-kIR" secondAttribute="leadingMargin" constant="15" id="WOR-B5-pCd"/>
+                <constraint firstItem="2n6-UE-v5e" firstAttribute="leading" secondItem="g94-au-kIR" secondAttribute="leading" id="Wp8-Qf-1H0"/>
+                <constraint firstItem="D8h-RR-9rp" firstAttribute="leading" secondItem="Mb6-np-db7" secondAttribute="trailing" constant="30" id="f1j-ib-ufs"/>
+                <constraint firstItem="Mb6-np-db7" firstAttribute="leading" secondItem="g94-au-kIR" secondAttribute="leadingMargin" constant="20" id="hJ5-JY-cUh"/>
+                <constraint firstAttribute="bottom" secondItem="Mb6-np-db7" secondAttribute="bottom" constant="40" id="qhA-SA-NG8"/>
+                <constraint firstItem="esl-7f-hJV" firstAttribute="top" secondItem="g94-au-kIR" secondAttribute="topMargin" constant="20" id="rWA-bc-4kZ"/>
+                <constraint firstItem="JNc-fl-ILv" firstAttribute="top" secondItem="D8h-RR-9rp" secondAttribute="bottom" constant="15" id="vHn-mh-8q1"/>
+                <constraint firstItem="2n6-UE-v5e" firstAttribute="top" secondItem="g94-au-kIR" secondAttribute="top" id="voM-BV-iUy"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="applyLb" destination="JNc-fl-ILv" id="ZGC-7J-bKW"/>
+                <outlet property="headerImgView" destination="Mb6-np-db7" id="pKD-rY-JcH"/>
+                <outlet property="loginNameLb" destination="D8h-RR-9rp" id="qIK-qG-SFs"/>
+                <outlet property="personInfoButton" destination="2n6-UE-v5e" id="Amt-Br-hpm"/>
+            </connections>
+            <point key="canvasLocation" x="-354" y="-766"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="message" width="25" height="25"/>
+        <image name="shezhi_icon" width="16" height="16"/>
+    </resources>
+</document>

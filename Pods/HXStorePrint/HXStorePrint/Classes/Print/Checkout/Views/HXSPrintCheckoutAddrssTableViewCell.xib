@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSPrintCheckoutAddrssTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="82"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="287" height="81"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_checkout_line" translatesAutoresizingMaskIntoConstraints="NO" id="geN-Cn-oJe"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wc-CG-fa8">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="无名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7JT-GJ-hGi">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13738005704" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HgA-LO-F4H">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="wgB-rF-09c"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货地址：杭州师范大学仓前校区东苑3号楼2单元113室写不下就换行" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgF-FL-dAf">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择收货地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMd-aE-94y" userLabel="请选择收货地址">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HgA-LO-F4H" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="7JT-GJ-hGi" secondAttribute="trailing" constant="5" id="BZm-JY-RQK"/>
+                    <constraint firstItem="7JT-GJ-hGi" firstAttribute="centerY" secondItem="2Wc-CG-fa8" secondAttribute="centerY" id="Bpy-IC-2D6"/>
+                    <constraint firstItem="cgF-FL-dAf" firstAttribute="top" secondItem="2Wc-CG-fa8" secondAttribute="bottom" constant="5" id="Fbo-mn-MHw"/>
+                    <constraint firstItem="cgF-FL-dAf" firstAttribute="leading" secondItem="2Wc-CG-fa8" secondAttribute="leading" id="XfR-8g-MpF"/>
+                    <constraint firstItem="7JT-GJ-hGi" firstAttribute="leading" secondItem="2Wc-CG-fa8" secondAttribute="trailing" id="cix-Xh-DII"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="UMd-aE-94y" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="1lu-se-9e9"/>
+                <constraint firstItem="UMd-aE-94y" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="8hf-So-CFg"/>
+                <constraint firstItem="2Wc-CG-fa8" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="15" id="H4k-qL-JiS"/>
+                <constraint firstItem="geN-Cn-oJe" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" id="ZJx-Lc-yiC"/>
+                <constraint firstAttribute="trailing" secondItem="cgF-FL-dAf" secondAttribute="trailing" constant="30" id="cCz-dZ-gdw"/>
+                <constraint firstItem="HgA-LO-F4H" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="15" id="ne3-Zl-GgI"/>
+                <constraint firstAttribute="trailing" secondItem="geN-Cn-oJe" secondAttribute="trailing" id="rvP-g9-bRw"/>
+                <constraint firstItem="2Wc-CG-fa8" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" constant="15" id="uRK-dh-f6F"/>
+                <constraint firstAttribute="bottom" secondItem="geN-Cn-oJe" secondAttribute="bottom" id="vjL-5V-OjK"/>
+                <constraint firstAttribute="trailing" secondItem="HgA-LO-F4H" secondAttribute="trailing" constant="30" id="y1E-KC-zHp"/>
+            </constraints>
+            <connections>
+                <outlet property="inforLabel" destination="UMd-aE-94y" id="qvs-vg-8bZ"/>
+                <outlet property="shoppingAddressContentLabel" destination="cgF-FL-dAf" id="Nn8-ag-lq8"/>
+                <outlet property="shoppingNameLabel" destination="7JT-GJ-hGi" id="I7w-uU-KO3"/>
+                <outlet property="shoppingPhone" destination="HgA-LO-F4H" id="5yj-kS-RZ1"/>
+                <outlet property="shoppingTitle" destination="2Wc-CG-fa8" id="P9t-yv-Fz0"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="img_checkout_line" width="371" height="3"/>
+    </resources>
+</document>

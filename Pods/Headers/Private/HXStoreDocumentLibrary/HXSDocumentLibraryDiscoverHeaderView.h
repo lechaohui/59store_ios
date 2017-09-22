@@ -1,0 +1,1 @@
+../../../HXStoreDocumentLibrary/HXStoreDocumentLibrary/Classes/HXStoreDocumentLibrary/DocumentDiscover/Views/HXSDocumentLibraryDiscoverHeaderView.h

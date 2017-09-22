@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXDRechargeMoneyTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="金额" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5j-4h-bf8">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" horizontalHuggingPriority="248" translatesAutoresizingMaskIntoConstraints="NO" id="7h6-VI-xmX" userLabel="lineView">
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="ORT-xK-adm"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="1" id="Q91-AT-Nb2"/>
+                            <constraint firstAttribute="height" constant="25" id="goo-Aj-wlv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Q91-AT-Nb2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入充值金额" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xtk-lu-EDC">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" text="￥ " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q9Q-Qt-1yC">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Q9Q-Qt-1yC" firstAttribute="baseline" secondItem="w5j-4h-bf8" secondAttribute="baseline" id="GUE-b7-dTI"/>
+                    <constraint firstItem="7h6-VI-xmX" firstAttribute="centerY" secondItem="w5j-4h-bf8" secondAttribute="centerY" id="ScO-DJ-SiT"/>
+                    <constraint firstItem="Q9Q-Qt-1yC" firstAttribute="leading" secondItem="7h6-VI-xmX" secondAttribute="trailing" constant="24" id="Vth-n8-Juy"/>
+                    <constraint firstItem="7h6-VI-xmX" firstAttribute="leading" secondItem="w5j-4h-bf8" secondAttribute="trailing" constant="5" id="c9W-AO-nFe"/>
+                    <constraint firstItem="Q9Q-Qt-1yC" firstAttribute="baseline" secondItem="xtk-lu-EDC" secondAttribute="baseline" id="ck9-ny-HcY"/>
+                    <constraint firstItem="xtk-lu-EDC" firstAttribute="leading" secondItem="Q9Q-Qt-1yC" secondAttribute="trailing" constant="13" id="gs6-oB-oc4"/>
+                    <constraint firstItem="Q9Q-Qt-1yC" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="o9c-6V-yL2"/>
+                    <constraint firstItem="Q9Q-Qt-1yC" firstAttribute="centerY" secondItem="xtk-lu-EDC" secondAttribute="centerY" id="oYw-4Q-LBn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstItem="xtk-lu-EDC" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="106" id="4hL-IN-s3J"/>
+                <constraint firstItem="w5j-4h-bf8" firstAttribute="leading" secondItem="KGk-i7-Jjw" secondAttribute="leading" constant="14" id="Ii0-5u-gLY"/>
+                <constraint firstAttribute="bottom" secondItem="xtk-lu-EDC" secondAttribute="bottom" id="X7P-q0-imt"/>
+                <constraint firstItem="xtk-lu-EDC" firstAttribute="top" secondItem="KGk-i7-Jjw" secondAttribute="top" id="Y3O-5q-a1U"/>
+                <constraint firstAttribute="trailing" secondItem="xtk-lu-EDC" secondAttribute="trailing" id="c7E-y9-pUD"/>
+                <constraint firstItem="w5j-4h-bf8" firstAttribute="centerY" secondItem="KGk-i7-Jjw" secondAttribute="centerY" id="ktu-un-qSm"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="ktu-un-qSm"/>
+                    <exclude reference="X7P-q0-imt"/>
+                    <exclude reference="Y3O-5q-a1U"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="moneyTF" destination="xtk-lu-EDC" id="pHK-Yf-wNX"/>
+                <outlet property="moneyTextField" destination="xtk-lu-EDC" id="vWc-uT-zgb"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

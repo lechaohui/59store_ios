@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HXSShopTableFootView">
+            <rect key="frame" x="0.0" y="0.0" width="328" height="52"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nWO-y0-UeV" userLabel="leftline">
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="BKI-JQ-fDs"/>
+                        <constraint firstAttribute="height" constant="1" id="r3W-cE-ZLd"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我们都是有底线的" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAw-oJ-3hp">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="99" id="5qX-Vb-0bM"/>
+                        <constraint firstAttribute="height" constant="15" id="6R9-LV-9hE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Yq-nv-DYv" userLabel="rightline">
+                    <color key="backgroundColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="30" id="UNj-5D-hvH"/>
+                        <constraint firstAttribute="height" constant="1" id="oeZ-J3-hc4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.95294117647058818" green="0.95686274509803915" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="XAw-oJ-3hp" firstAttribute="leading" secondItem="nWO-y0-UeV" secondAttribute="trailing" constant="6" id="BOQ-Q3-Sq8"/>
+                <constraint firstItem="XAw-oJ-3hp" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="IHs-qR-RIg"/>
+                <constraint firstItem="0Yq-nv-DYv" firstAttribute="leading" secondItem="XAw-oJ-3hp" secondAttribute="trailing" constant="5" id="L5a-rd-YLo"/>
+                <constraint firstItem="nWO-y0-UeV" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="b7O-7b-ZkF"/>
+                <constraint firstItem="0Yq-nv-DYv" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="bhS-GZ-2cW"/>
+                <constraint firstItem="XAw-oJ-3hp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="r1M-My-M9g"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="534" y="462"/>
+        </view>
+    </objects>
+</document>

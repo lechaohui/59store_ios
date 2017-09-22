@@ -1,0 +1,1 @@
+../../../HXStorePrint/HXStorePrint/Classes/Print/PrintSettingView/Views/PrintSettingCollectionView Left Aligned Layout/UICollectionViewLeftAlignedLayout.h

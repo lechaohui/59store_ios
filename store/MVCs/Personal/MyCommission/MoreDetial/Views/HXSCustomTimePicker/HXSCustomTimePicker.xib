@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HXSCustomTimePicker">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="276"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhk-11-dym">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="7nW-RA-Lgi"/>
+                        <constraint firstAttribute="height" constant="30" id="iyH-h8-0fd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="cancleButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="W0L-mt-gCT"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcX-ff-KFZ">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="LcY-te-CV7"/>
+                        <constraint firstAttribute="height" constant="30" id="heR-Fs-8GP"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="sureButtonClicked:" destination="iN0-l3-epB" eventType="touchUpInside" id="eRD-a3-S9R"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8dW-lS-E4y">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="216" id="orG-9U-qvP"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="xlI-mR-3xr"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="tBx-mJ-9e3"/>
+                    </connections>
+                </pickerView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8dW-lS-E4y" secondAttribute="trailing" id="3BE-48-dDw"/>
+                <constraint firstItem="nhk-11-dym" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="AdF-dS-pfn"/>
+                <constraint firstItem="8dW-lS-E4y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Xq5-Cy-Hpa"/>
+                <constraint firstAttribute="trailing" secondItem="gcX-ff-KFZ" secondAttribute="trailing" constant="16" id="bEd-8d-drB"/>
+                <constraint firstItem="nhk-11-dym" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="rxg-FY-d9B"/>
+                <constraint firstAttribute="bottom" secondItem="8dW-lS-E4y" secondAttribute="bottom" id="wUi-Ce-awL"/>
+                <constraint firstItem="gcX-ff-KFZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="xUW-8k-sH9"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="pickerView" destination="8dW-lS-E4y" id="Uyk-y2-R91"/>
+            </connections>
+            <point key="canvasLocation" x="-168" y="38"/>
+        </view>
+    </objects>
+</document>

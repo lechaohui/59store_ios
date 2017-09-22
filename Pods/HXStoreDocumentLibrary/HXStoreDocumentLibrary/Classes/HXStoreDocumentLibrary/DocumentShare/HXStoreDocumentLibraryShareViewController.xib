@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXStoreDocumentLibraryShareViewController">
+            <connections>
+                <outlet property="anonymousButton" destination="SdN-YJ-NNb" id="prU-Q6-KNO"/>
+                <outlet property="bottomView" destination="9t2-FL-YLE" id="Rld-Bw-99h"/>
+                <outlet property="confirmShareButton" destination="jkY-WW-fR7" id="HYh-hD-s5S"/>
+                <outlet property="mainTableView" destination="xGM-mf-gMB" id="xYg-ep-MWF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9t2-FL-YLE" userLabel="bottomView">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jkY-WW-fR7">
+                            <color key="backgroundColor" red="0.027450980390000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="Iuz-FN-3ta"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="确认分享(0)">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <state key="disabled">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="0.40000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="confrimToShareButtonAction:" destination="-1" eventType="touchUpInside" id="6rf-cs-Dv2"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SdN-YJ-NNb" userLabel="no name upload">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <state key="normal" title=" 我要匿名上传" image="ic_choose_normal">
+                                <color key="titleColor" red="0.027450980390000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <state key="disabled" title=" 我要匿名上传" image="ic_choose_normal">
+                                <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected" title=" 我要匿名上传" image="ic_choose_selected">
+                                <color key="titleColor" red="0.027450980390000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="anonymousButtonAction:" destination="-1" eventType="touchUpInside" id="sVn-16-GPn"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="2oh-Mk-HXV"/>
+                        <constraint firstAttribute="trailing" secondItem="jkY-WW-fR7" secondAttribute="trailing" id="PCl-1v-kbK"/>
+                        <constraint firstAttribute="bottom" secondItem="jkY-WW-fR7" secondAttribute="bottom" id="Xhm-sy-acq"/>
+                        <constraint firstItem="jkY-WW-fR7" firstAttribute="top" secondItem="9t2-FL-YLE" secondAttribute="top" id="iLL-fl-S32"/>
+                        <constraint firstItem="SdN-YJ-NNb" firstAttribute="leading" secondItem="9t2-FL-YLE" secondAttribute="leading" constant="15" id="mAj-3V-Oac"/>
+                        <constraint firstItem="SdN-YJ-NNb" firstAttribute="centerY" secondItem="9t2-FL-YLE" secondAttribute="centerY" id="vWU-oE-fo0"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="xGM-mf-gMB">
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96470588235294119" blue="0.96862745098039216" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="f4b-ZK-qL0"/>
+                        <outlet property="delegate" destination="-1" id="Fi9-ey-OyE"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="9t2-FL-YLE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JhW-sB-4fT"/>
+                <constraint firstItem="9t2-FL-YLE" firstAttribute="top" secondItem="xGM-mf-gMB" secondAttribute="bottom" id="TCD-hM-a3f"/>
+                <constraint firstAttribute="trailing" secondItem="9t2-FL-YLE" secondAttribute="trailing" id="dnR-Hn-hkk"/>
+                <constraint firstAttribute="trailing" secondItem="xGM-mf-gMB" secondAttribute="trailing" id="mvl-uM-KUF"/>
+                <constraint firstAttribute="bottom" secondItem="9t2-FL-YLE" secondAttribute="bottom" id="rzV-MY-QRg"/>
+                <constraint firstItem="xGM-mf-gMB" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="txh-mO-1Uz"/>
+                <constraint firstItem="xGM-mf-gMB" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yme-HU-HOp"/>
+            </constraints>
+            <point key="canvasLocation" x="25.5" y="59.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_choose_normal" width="20" height="20"/>
+        <image name="ic_choose_selected" width="24" height="24"/>
+    </resources>
+</document>

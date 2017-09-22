@@ -1,0 +1,1 @@
+../../../HXStoreDocumentLibrary/HXStoreDocumentLibrary/Classes/HXStoreDocumentLibrary/DocumentPayment/Views/HXSPrintAmountTableViewCell.h

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="42" id="KGk-i7-Jjw" customClass="HXSOrderListOperateCell">
+            <rect key="frame" x="0.0" y="0.0" width="614" height="42"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="614" height="41"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpo-UI-yPS">
+                        <color key="backgroundColor" red="1" green="0.16078431372549015" blue="0.16078431372549015" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="aC5-O0-G3Y"/>
+                            <constraint firstAttribute="width" constant="71" id="fR1-lc-Bx4"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="取消订单">
+                            <color key="titleColor" red="0.16078431372549018" green="0.16078431372549018" blue="0.16078431372549018" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttconClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bzX-NS-xgx"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2oT-VW-Kn6">
+                        <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="DkT-ap-GtR"/>
+                            <constraint firstAttribute="width" constant="71" id="r8G-Ty-ERY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="立即支付">
+                            <color key="titleColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttconClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="E87-JA-ewX"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zj4-WS-hxP">
+                        <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="gbh-y8-akI"/>
+                            <constraint firstAttribute="height" constant="30" id="k9Z-eX-om6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="评价得10积分">
+                            <color key="titleColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttconClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BSY-Ut-1ft"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xie-9B-AZ2">
+                        <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="6WN-H5-NYz"/>
+                            <constraint firstAttribute="width" constant="95" id="mEm-qh-GuA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="查看参与详情">
+                            <color key="titleColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttconClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3MW-qC-X4w"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWU-bs-Rxs">
+                        <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="6qG-ZK-Whh"/>
+                            <constraint firstAttribute="width" constant="95" id="O9C-Zz-TKg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="查看约团详情">
+                            <color key="titleColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttconClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pm0-j3-9gF"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGg-33-fdz">
+                        <color key="backgroundColor" red="1" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="CLa-ps-gjZ"/>
+                            <constraint firstAttribute="width" constant="95" id="Vwk-vI-bFv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="邀请好友约团">
+                            <color key="titleColor" red="0.16078431369999999" green="0.16078431369999999" blue="0.16078431369999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="buttconClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="i6u-j6-W7N"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zj4-WS-hxP" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9UN-jJ-hn2"/>
+                    <constraint firstItem="rpo-UI-yPS" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Dyj-TJ-ZUI"/>
+                    <constraint firstAttribute="trailing" secondItem="2oT-VW-Kn6" secondAttribute="trailing" constant="94" id="F3b-wh-4IT"/>
+                    <constraint firstItem="Xie-9B-AZ2" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="NU7-5a-2sX"/>
+                    <constraint firstAttribute="trailing" secondItem="xWU-bs-Rxs" secondAttribute="trailing" constant="379" id="NV9-tP-xkR"/>
+                    <constraint firstAttribute="trailing" secondItem="VGg-33-fdz" secondAttribute="trailing" constant="482" id="Nar-Tl-m8t"/>
+                    <constraint firstAttribute="trailing" secondItem="Xie-9B-AZ2" secondAttribute="trailing" constant="276" id="Obf-yF-zkn"/>
+                    <constraint firstItem="2oT-VW-Kn6" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="egt-55-kJt"/>
+                    <constraint firstAttribute="trailing" secondItem="rpo-UI-yPS" secondAttribute="trailing" constant="15" id="er9-mg-MlJ"/>
+                    <constraint firstAttribute="trailing" secondItem="zj4-WS-hxP" secondAttribute="trailing" constant="173" id="pTh-Di-vdQ"/>
+                    <constraint firstItem="VGg-33-fdz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="wRf-1x-h1t"/>
+                    <constraint firstItem="xWU-bs-Rxs" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zDi-Xv-ebf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cancleButton" destination="rpo-UI-yPS" id="b4G-Mi-1Yb"/>
+                <outlet property="cancleButtonLayoutRight" destination="er9-mg-MlJ" id="Xn4-gN-DMM"/>
+                <outlet property="evaluationButton" destination="zj4-WS-hxP" id="8wl-EG-LuF"/>
+                <outlet property="evaluationButtonLayoutRight" destination="pTh-Di-vdQ" id="r38-KE-S4T"/>
+                <outlet property="groupDetialButton" destination="xWU-bs-Rxs" id="hte-Fm-YjK"/>
+                <outlet property="groupDetialButtonLayoutRight" destination="NV9-tP-xkR" id="7sB-xK-ZQf"/>
+                <outlet property="joinGroupButton" destination="VGg-33-fdz" id="PtG-Di-AIT"/>
+                <outlet property="joinGroupLayoutRight" destination="Nar-Tl-m8t" id="moy-Up-GO1"/>
+                <outlet property="participateDetialBuuton" destination="Xie-9B-AZ2" id="SIZ-wG-vXv"/>
+                <outlet property="participateDetialBuutonLayoutRight" destination="Obf-yF-zkn" id="5gB-61-Hul"/>
+                <outlet property="payNowButton" destination="2oT-VW-Kn6" id="b9r-R4-Khv"/>
+                <outlet property="payNowButtonLayoutRight" destination="F3b-wh-4IT" id="UHJ-9E-95V"/>
+            </connections>
+            <point key="canvasLocation" x="-374" y="32"/>
+        </tableViewCell>
+    </objects>
+</document>

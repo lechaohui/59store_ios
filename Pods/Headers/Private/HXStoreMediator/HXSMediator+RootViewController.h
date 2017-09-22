@@ -1,0 +1,1 @@
+../../../HXStoreMediator/HXStoreMediator/ModuleActions/RootViewModule/HXSMediator+RootViewController.h

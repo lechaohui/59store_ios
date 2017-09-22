@@ -1,0 +1,1 @@
+../../../HXStoreDocumentLibrary/HXStoreDocumentLibrary/Classes/HXStoreDocumentLibrary/DocumentReview/DocumentPDFView/PDFSupport/ReaderThumbRequest.h

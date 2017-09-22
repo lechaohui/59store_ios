@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSDigitalMobileInstallmentAgreementViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="UFh-4F-5ZP" id="QEx-F1-AAF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="373" height="425"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="确认下单前，请务必仔细阅读以下分期协议：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofk-Qy-zmd">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="322" id="QQm-lU-D8U"/>
+                        <constraint firstAttribute="height" constant="21" id="pZu-9s-ffE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HAM-W9-Pfq" customClass="HXSHorizontalLineLabel">
+                    <color key="backgroundColor" red="0.81960784310000001" green="0.81960784310000001" blue="0.81960784310000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5z9-F5-VIC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q48-VF-SIg">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="RD1-LG-cMP"/>
+                    </constraints>
+                    <state key="normal" title="我已阅读并同意协议">
+                        <color key="titleColor" red="0.027450980390000001" green="0.66274509800000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="agree:" destination="-1" eventType="touchUpInside" id="7AH-vS-DuY"/>
+                    </connections>
+                </button>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UFh-4F-5ZP">
+                    <color key="backgroundColor" red="0.94597387313842773" green="0.9506533145904541" blue="0.95561277866363525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Q48-VF-SIg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8TQ-SB-DDS"/>
+                <constraint firstAttribute="bottom" secondItem="UFh-4F-5ZP" secondAttribute="bottom" constant="45" id="Abb-dt-Cti"/>
+                <constraint firstAttribute="trailing" secondItem="HAM-W9-Pfq" secondAttribute="trailing" id="Brj-I2-5rD"/>
+                <constraint firstItem="ofk-Qy-zmd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="Lh1-av-l2j"/>
+                <constraint firstAttribute="trailing" secondItem="Q48-VF-SIg" secondAttribute="trailing" id="U4o-L5-sD7"/>
+                <constraint firstAttribute="bottom" secondItem="Q48-VF-SIg" secondAttribute="bottom" id="aYP-B4-z6o"/>
+                <constraint firstItem="UFh-4F-5ZP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="cDh-TJ-gkM"/>
+                <constraint firstItem="ofk-Qy-zmd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="k14-MP-q4d"/>
+                <constraint firstItem="HAM-W9-Pfq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="nbg-F3-6gR"/>
+                <constraint firstAttribute="trailing" secondItem="UFh-4F-5ZP" secondAttribute="trailing" constant="15" id="odK-Vn-DgP"/>
+                <constraint firstItem="UFh-4F-5ZP" firstAttribute="top" secondItem="ofk-Qy-zmd" secondAttribute="bottom" constant="1" id="qgO-vo-3QG"/>
+                <constraint firstAttribute="bottom" secondItem="HAM-W9-Pfq" secondAttribute="bottom" constant="44" id="wTg-sR-S72"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="266.5" y="248.5"/>
+        </view>
+    </objects>
+</document>

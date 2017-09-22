@@ -1,0 +1,1 @@
+../../../HXStorePrint/HXStorePrint/Classes/Print/DeliveryInfo/Model/Entities/HXSDeliveryEntity.h

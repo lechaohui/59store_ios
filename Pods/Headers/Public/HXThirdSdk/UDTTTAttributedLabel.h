@@ -1,0 +1,1 @@
+../../../HXThirdSdk/HXThirdSdk/UdeskSDK/UDChatMessage/UDTools/UDVendor/TTTAttributedLabel/UDTTTAttributedLabel.h

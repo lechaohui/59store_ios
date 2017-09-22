@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSOrderConsigneeInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="106"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="105"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_set_location" translatesAutoresizingMaskIntoConstraints="NO" id="eD8-an-2SC">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="0ZH-5r-EHV"/>
+                            <constraint firstAttribute="width" constant="15" id="AGz-jW-DgR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货人：隔壁老王" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="sVN-Ka-dKQ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="2uO-xt-Ol7"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18042005822" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="qdK-78-VWS">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="104" id="Ath-Ga-94M"/>
+                            <constraint firstAttribute="height" constant="21" id="bxV-XE-jcG"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="收货地址：收货地址：收货地址收货地址收货地址收货地址：收货地址收货地址收货地址" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="YJf-GL-Ox8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="EuO-Eo-oyy"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注：我有话要说" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="CfT-5M-Rq4">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="IkO-7I-81h"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YJf-GL-Ox8" firstAttribute="leading" secondItem="sVN-Ka-dKQ" secondAttribute="leading" id="36V-QU-mrf"/>
+                    <constraint firstItem="eD8-an-2SC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="6ME-Qc-pae"/>
+                    <constraint firstItem="YJf-GL-Ox8" firstAttribute="top" secondItem="qdK-78-VWS" secondAttribute="bottom" constant="10" id="8v4-8e-595"/>
+                    <constraint firstItem="qdK-78-VWS" firstAttribute="top" secondItem="sVN-Ka-dKQ" secondAttribute="top" id="AOE-mo-RiL"/>
+                    <constraint firstItem="qdK-78-VWS" firstAttribute="leading" secondItem="sVN-Ka-dKQ" secondAttribute="trailing" constant="8" id="BhD-w1-PT4"/>
+                    <constraint firstItem="CfT-5M-Rq4" firstAttribute="leading" secondItem="YJf-GL-Ox8" secondAttribute="leading" id="HSA-Ka-CBp"/>
+                    <constraint firstItem="CfT-5M-Rq4" firstAttribute="trailing" secondItem="YJf-GL-Ox8" secondAttribute="trailing" id="INe-Ee-uLy"/>
+                    <constraint firstItem="eD8-an-2SC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="UTG-4F-GpM"/>
+                    <constraint firstItem="CfT-5M-Rq4" firstAttribute="top" secondItem="YJf-GL-Ox8" secondAttribute="bottom" constant="10" id="Vl3-7B-Aai"/>
+                    <constraint firstItem="qdK-78-VWS" firstAttribute="trailing" secondItem="YJf-GL-Ox8" secondAttribute="trailing" id="Xfr-7V-Zsu"/>
+                    <constraint firstItem="qdK-78-VWS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="dxw-xU-tcc"/>
+                    <constraint firstAttribute="trailing" secondItem="qdK-78-VWS" secondAttribute="trailing" constant="15" id="mYh-dn-z1c"/>
+                    <constraint firstItem="sVN-Ka-dKQ" firstAttribute="leading" secondItem="eD8-an-2SC" secondAttribute="trailing" constant="8" id="u92-B3-GJ7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="YJf-GL-Ox8" id="tOM-rj-Afe"/>
+                <outlet property="addressLabelHeightLayout" destination="EuO-Eo-oyy" id="Lfg-bU-xuf"/>
+                <outlet property="nameLabel" destination="sVN-Ka-dKQ" id="UBG-TZ-hT5"/>
+                <outlet property="phoneLabel" destination="qdK-78-VWS" id="1Wl-FV-BHg"/>
+                <outlet property="remarkLabel" destination="CfT-5M-Rq4" id="R9I-f2-J8U"/>
+                <outlet property="remarkLabelHeightLayout" destination="IkO-7I-81h" id="3OD-GH-tfS"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_set_location" width="15" height="15"/>
+    </resources>
+</document>

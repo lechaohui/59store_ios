@@ -1,0 +1,1 @@
+../../../HXStoreUtilities/HXStoreUtilities/Classes/CreditPayManager/Model/HXSBaiHuaHuaPayModel.h

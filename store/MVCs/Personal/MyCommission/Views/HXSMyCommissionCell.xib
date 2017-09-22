@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="HXSMyCommissionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="62"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-04-25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vR7-dg-km0">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="cKJ-Xn-2hF"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+￥3.00" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-p9-Mn6">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="为[巴哥]送货" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e15-F1-Hsu">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="MBe-jE-ydL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fvr-p9-Mn6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CA9-Y2-KKi"/>
+                    <constraint firstItem="fvr-p9-Mn6" firstAttribute="leading" secondItem="e15-F1-Hsu" secondAttribute="trailing" constant="22.5" id="Nwl-4n-zBD"/>
+                    <constraint firstItem="e15-F1-Hsu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="PsJ-AN-weV"/>
+                    <constraint firstAttribute="trailing" secondItem="fvr-p9-Mn6" secondAttribute="trailing" constant="15" id="WJC-NW-QDl"/>
+                    <constraint firstItem="vR7-dg-km0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="erd-m4-sfi"/>
+                    <constraint firstItem="e15-F1-Hsu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="kKK-HP-cGM"/>
+                    <constraint firstAttribute="bottom" secondItem="fvr-p9-Mn6" secondAttribute="bottom" id="kfr-9B-Pay"/>
+                    <constraint firstItem="vR7-dg-km0" firstAttribute="top" secondItem="e15-F1-Hsu" secondAttribute="bottom" constant="4" id="yUv-Jk-OeU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="e15-F1-Hsu" id="kW8-07-6lc"/>
+                <outlet property="moneyLabel" destination="fvr-p9-Mn6" id="pjR-GQ-Qke"/>
+                <outlet property="timeLael" destination="vR7-dg-km0" id="Ad5-Ax-xx0"/>
+            </connections>
+            <point key="canvasLocation" x="284" y="336.5"/>
+        </tableViewCell>
+    </objects>
+</document>

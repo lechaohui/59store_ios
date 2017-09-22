@@ -1,0 +1,1 @@
+../../../HXStorePrint/HXStorePrint/Classes/Print/Checkout/PrintCoupon/Model/HXSPrintCouponModel.h

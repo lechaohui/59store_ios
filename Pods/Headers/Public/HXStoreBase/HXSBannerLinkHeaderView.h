@@ -1,0 +1,1 @@
+../../../HXStoreBase/HXStoreBase/Classes/HXSBannerLinkHeaderView/HXSBannerLinkHeaderView.h

@@ -1,0 +1,1 @@
+../../../HXStoreDocumentLibrary/HXStoreDocumentLibrary/Classes/HXStoreDocumentLibrary/DocumentBuyed/Views/HXStoreDocumentLibraryBuyedTableViewCell.h

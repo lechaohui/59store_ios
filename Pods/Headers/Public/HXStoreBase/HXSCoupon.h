@@ -1,0 +1,1 @@
+../../../HXStoreBase/HXStoreBase/Classes/DateModel/User/HXSCoupon.h

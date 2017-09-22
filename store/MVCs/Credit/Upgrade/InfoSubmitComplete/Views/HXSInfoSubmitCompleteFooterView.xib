@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HXSInfoSubmitCompleteFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="84"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-Mz-jyi" customClass="HXSRoundedButton">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="vLm-fA-X4H"/>
+                    </constraints>
+                    <state key="normal" title="返回花不完"/>
+                    <connections>
+                        <action selector="backButtonClickAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="JW2-E5-6EQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95059561729431152" green="0.9555554986000061" blue="0.96062958240509033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="rjK-Mz-jyi" secondAttribute="trailing" constant="15" id="BlX-P9-eIL"/>
+                <constraint firstItem="rjK-Mz-jyi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="LOe-dK-0AH"/>
+                <constraint firstItem="rjK-Mz-jyi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="YVV-Ml-cZ5"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="backButton" destination="rjK-Mz-jyi" id="WWR-ax-kE5"/>
+            </connections>
+        </view>
+    </objects>
+</document>

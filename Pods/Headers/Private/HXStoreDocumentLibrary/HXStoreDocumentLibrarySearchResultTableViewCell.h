@@ -1,0 +1,1 @@
+../../../HXStoreDocumentLibrary/HXStoreDocumentLibrary/Classes/HXStoreDocumentLibrary/DocumentSearch/Views/HXStoreDocumentLibrarySearchResultTableViewCell.h

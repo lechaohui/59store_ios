@@ -1,0 +1,1 @@
+../../../HXStoreUtilities/HXStoreUtilities/Classes/Coupon/Views/HXSCouponListSectionHeaderView.h

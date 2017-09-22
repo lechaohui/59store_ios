@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HXSCMBPayViewController">
+            <connections>
+                <outlet property="view" destination="mX0-L6-FSr" id="zzO-jM-NCv"/>
+                <outlet property="webView" destination="qal-vX-MoU" id="gDQ-UO-Fqk"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mX0-L6-FSr">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qal-vX-MoU">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="N5u-dg-6ld"/>
+                    </connections>
+                </webView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qal-vX-MoU" secondAttribute="bottom" id="2XG-6h-9mo"/>
+                <constraint firstItem="qal-vX-MoU" firstAttribute="top" secondItem="mX0-L6-FSr" secondAttribute="top" id="9SI-1b-UVq"/>
+                <constraint firstItem="qal-vX-MoU" firstAttribute="leading" secondItem="mX0-L6-FSr" secondAttribute="leading" id="ELY-yE-rP1"/>
+                <constraint firstAttribute="trailing" secondItem="qal-vX-MoU" secondAttribute="trailing" id="d1e-Lc-Jwc"/>
+            </constraints>
+            <point key="canvasLocation" x="-124" y="11"/>
+        </view>
+    </objects>
+</document>
